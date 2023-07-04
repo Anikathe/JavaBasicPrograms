@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Sum{
+    public static void main(String[] args) {
+    int sum=0;
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter the number of rows and column");
+    int row =scanner.nextInt();
+    int col =scanner.nextInt();
+    while(row>=1 && col>=1)
+    {
+        sum = sum+row*col;
+        row--;
+        col--;
+    
+    }
+    System.out.println(sum);
+    }
+}
